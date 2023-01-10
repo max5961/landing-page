@@ -22,6 +22,16 @@ a {
     color: #f9faf8
 }
 
+a:hover {
+    color: #e0e0e0;
+}
+
+/* images are stretched to fit into div.  Not what I wanted */
+img {
+    height: 100%;
+    width: 100%;
+}
+
 /* MAIN FLEX OBJECTS
 children of the body element
 
@@ -31,8 +41,9 @@ children of the body element
     color: #f9f9f9;
     height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 15% 0 15%;
 }
 
 .content {
@@ -70,8 +81,9 @@ BOX1 TO BOX4 */
     background-color:#1f2937;
     flex: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 15% 0 15%;
 }
 
 .box2 {
@@ -81,6 +93,8 @@ BOX1 TO BOX4 */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    
 }
 
 .box3 {
@@ -134,6 +148,7 @@ BOX1 TO BOX4 */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 /* BOX2 */
@@ -147,13 +162,14 @@ BOX1 TO BOX4 */
     color: black;
     text-align: center;
     filter: contrast(50%);
-    width: 100px;
+    width: 125px;
+    min-height: 100px;
 }
 
 .box2-box {
-    height: 100px;
-    width: 100px;
-    border: 3px solid blue;
+    height: 125px;
+    width: 125px;
+    border: 2px solid #b6b6b6;
     border-radius: 5%;
 
 }
@@ -162,7 +178,7 @@ BOX1 TO BOX4 */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
 }
 
 .box2-content {
