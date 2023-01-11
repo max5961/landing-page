@@ -29,7 +29,7 @@ a:hover {
 /* images are stretched to fit into div.  Not what I wanted */
 img {
     height: 100%;
-    width: 100%;
+    width: 100%
 }
 
 /* MAIN FLEX OBJECTS
@@ -41,9 +41,9 @@ children of the body element
     color: #f9f9f9;
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 15% 0 15%;
+    
 }
 
 .content {
@@ -67,6 +67,7 @@ children of the body element
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .header .header-logo {
@@ -81,9 +82,8 @@ BOX1 TO BOX4 */
     background-color:#1f2937;
     flex: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 15% 0 15%;
 }
 
 .box2 {
@@ -179,6 +179,7 @@ BOX1 TO BOX4 */
     justify-content: center;
     align-items: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .box2-content {
@@ -216,7 +217,7 @@ BOX1 TO BOX4 */
 
 /* BOX4 */
 .sign-up-container {
-    width: 50%;
+    width: 60%;
     min-width: 425px;
     height: 75px;
     background-color: #3882f6;
@@ -250,3 +251,42 @@ BOX1 TO BOX4 */
 }
 
 
+/* containers to shorten width of content */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    flex: 1 1 0;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.box1-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    flex: 1 1 0;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    flex: 1 1 0;
+    padding: 5px;
+}
+
+.box4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    flex: 1 1 0;
+    padding: 5px;
+}
